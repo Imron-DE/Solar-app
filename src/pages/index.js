@@ -1,4 +1,4 @@
-import CardClient from "@/components/CardClient";
+import CardClient from "@/components/organism/CardClient";
 import About from "@/components/organism/About";
 import CardReason from "@/components/organism/CardReason";
 import CardReview from "@/components/organism/CardReview";

@@ -1,3 +1,4 @@
+import Button from "@/components/atoms/Button";
 import React from "react";
 
 const FormData = () => {
@@ -5,7 +6,7 @@ const FormData = () => {
     <>
       <div class="flex flex-col items-center justify-center text-center bg-white py-16 px-4">
         <h1 class="text-3xl font-bold text-center mb-8">Formulir Data Pra-Proyek PLTS</h1>
-        <p class="mb-8 text-center">
+        <p class="mb-8 text-center px-64">
           Selamat datang DI SHAMS ENERGY, Kami berikan GRATIS: KONSULTASI dan PERENCANAAN PEMASANGAN. Juga dapatkan penawaran menarik untuk DISCOUNT harga melalui PENAWARAN dengan Area pemasangan kami di seluruh Indonesia. Untuk Informasi
           lebih lanjut dan penawaran harga mohon cantumkan data sbb :
         </p>
@@ -55,9 +56,8 @@ const FormData = () => {
               <textarea name="alamat" id="alamat" rows="4" class="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
             </div>
           </div>
-          <button type="submit" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 justify-start">
-            Kirim
-          </button>
+
+          <Button buttonClassname="w-48 py-3 justify-start bg-orange-500 text-white text-sm font-semibold rounded-lg hover:bg-orange-600 transition duration-300">Kirim</Button>
         </form>
       </div>
     </>

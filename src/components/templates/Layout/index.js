@@ -1,13 +1,16 @@
 import Footer from "@/components/organism/Footer";
 import Navbar from "@/components/organism/Navbar";
-import React, { children } from "react";
+import React from "react";
+import { useRouter } from "next/router";
 
-const Layout = () => {
+const Layout = ({ children }) => {
+  const router = useRouter();
   return (
     <>
       <Navbar />
       {children}
-      <Footer />
+      {/* Tampilkan Footer hanya jika pada halaman '/' */}
+      {router.pathname === "/" && <Footer />}
     </>
   );
 };
